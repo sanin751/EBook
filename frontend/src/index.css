@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream-50: #fdfbf8;
+  --color-cream-100: #f8f2ea;
+  --color-cream-200: #f2e9dc;
+
+  --color-plum-50: #f8eef0;
+  --color-plum-100: #f0d6da;
+  --color-plum-200: #e2b0ba;
+  --color-plum-300: #cf7f8e;
+  --color-plum-400: #b85567;
+  --color-plum-500: #9c3349;
+  --color-plum-600: #832740;
+  --color-plum-700: #6a1f34;
+  --color-plum-800: #501828;
+  --color-plum-900: #34101a;
+
+  --color-ink-50: #f4f1ee;
+  --color-ink-100: #e3ddd6;
+  --color-ink-400: #6b5f55;
+  --color-ink-600: #4a3f37;
+  --color-ink-800: #2c2420;
+  --color-ink-900: #1e1815;
+
+  --color-sage-50: #eef1e6;
+  --color-sage-100: #dee4cc;
+  --color-sage-500: #5c6b45;
+  --color-sage-600: #4b5738;
+  --color-sage-700: #3a4429;
+
+  --color-blush-100: #f8e3d6;
+  --color-blush-200: #f5d9cb;
+  --color-blush-300: #efc3ac;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-cream-50 text-ink-800 font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-plum-200 text-ink-900;
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+}
